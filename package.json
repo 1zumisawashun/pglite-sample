@@ -1,0 +1,33 @@
+{
+	"name": "pglite-sample",
+	"type": "module",
+	"scripts": {
+		"dev": "tsx watch src/index.ts",
+		"build": "tsc",
+		"start": "node dist/index.js",
+		"prisma:generate": "npx prisma generate",
+		"prisma:migrate": "prisma migrate dev",
+		"prisma:dev": "npm run prisma:generate && npm run prisma:migrate && npm run prisma:seed",
+		"prisma:format": "npx prisma format",
+		"prisma:studio": "npx prisma studio",
+		"prisma:push": "npx prisma db push",
+		"prisma:seed": "prisma db seed",
+		"prisma:reset": "npx prisma db push --force-reset",
+		"prisma:reset-seed": "npx prisma db push --force-reset && npm run prisma:seed",
+		"typecheck": "tsc --noEmit",
+		"lint:fmt": "biome format",
+		"lint:js": "biome lint"
+	},
+	"dependencies": {
+		"@hono/node-server": "^1.18.1",
+		"@prisma/client": "^6.13.0",
+		"hono": "^4.9.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.2.4",
+		"@types/node": "^20.11.17",
+		"prisma": "^6.13.0",
+		"tsx": "^4.7.1",
+		"typescript": "^5.8.3"
+	}
+}
