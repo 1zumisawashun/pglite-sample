@@ -1,0 +1,12 @@
+{
+	"editor.tabSize": 2,
+	// biome
+	"biome.enabled": true,
+	"[typescript][javascript][json][jsonc][javascript][markdown][yaml][typescriptreact]": {
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.formatOnSave": true
+	},
+	"editor.codeActionsOnSave": {
+		"source.fixAll.biome": "always"
+	}
+}

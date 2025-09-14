@@ -30,8 +30,14 @@
 
 本リポジトリではDDDの設計パターンを検証しています。
 
-- 悪い例: `src/01_article`
-- 良い例: `src/02_article`
+- レイヤード: `src/01_article`
+- レイヤード（リポジトリパターン）: `src/02_article`
+- クリーン・オニオン・ヘキサゴナル: `src/03_item`
+   - https://github.com/westhouseK/ts-demo
+
+- https://github.com/jbuget/nodejs-clean-architecture-app
+- https://github.com/masakifukunishi/ddd-blog-api
+   - resolverはgraphqlのコンテキストのイメージだったけどおそらくDDDのcontrollerに該当するはず
 
 設計の違いを比較しながら学習・検証できます。
 
