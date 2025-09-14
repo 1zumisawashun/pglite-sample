@@ -13,7 +13,8 @@
 		"prisma:push": "npx prisma db push",
 		"prisma:seed": "prisma db seed",
 		"prisma:reset": "npx prisma db push --force-reset",
-		"prisma:reset-seed": "npx prisma db push --force-reset && npm run prisma:seed",
+		"prisma:reset-seed": "npm run prisma:reset && npm run prisma:seed",
+		"postinstall": "npm run prisma:generate",
 		"typecheck": "tsc --noEmit",
 		"lint:fmt": "biome format",
 		"lint:js": "biome lint"
@@ -29,5 +30,8 @@
 		"prisma": "^6.13.0",
 		"tsx": "^4.7.1",
 		"typescript": "^5.8.3"
+	},
+	"prisma": {
+		"seed": "npx tsx src/utils/prisma/seed.ts"
 	}
 }

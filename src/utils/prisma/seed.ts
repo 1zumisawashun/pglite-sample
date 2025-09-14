@@ -1,7 +1,5 @@
-import { PrismaClient } from "@prisma/client";
 import { mockArticles, mockCategories, mockUsers } from "./mocks";
-
-const prisma = new PrismaClient();
+import { prisma } from "./prismaClient";
 
 async function main() {
 	// delete all
